@@ -6,11 +6,18 @@ contract SimpleStorage {
         string Favname;
         uint256 Favnum;
     } 
+    uint favnumber;
     People[] public Group;//array or lists 
     //mapping string to uint 
     mapping(string=>uint256) public nametoFav;
-    function Store(string memory _Favname,uint _Favnum)public {
+    function addperson(string memory _Favname,uint _Favnum)public {
        Group.push(People(_Favname,_Favnum));
        nametoFav[_Favname]= _Favnum;
+    }
+    function store(uint _Number) public{
+     favnumber=_Number;
+    }
+    function retrieve() view public  returns(uint256 ){
+        return favnumber;
     }
 } 
