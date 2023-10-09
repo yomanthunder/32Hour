@@ -5,8 +5,8 @@ import "./practice1.sol";
 
 contract StorageFactory {
     
-    SimpleStorage[] public simpleStorageArray;//simpleStorageArrays stores all the arrays 
-    
+    SimpleStorage[] public simpleStorageArray;//simpleStorageArrays stores all the contracts  
+    //below functin is creating a simplestorage contract 
     function createSimpleStorageContract() public {
         SimpleStorage simpleStorage = new SimpleStorage();
         simpleStorageArray.push(simpleStorage);
@@ -16,7 +16,7 @@ contract StorageFactory {
         // Address 
         // ABI 
         // SimpleStorage(address(simpleStorageArray[_simpleStorageIndex])).store(_simpleStorageNumber);
-        simpleStorageArray[_simpleStorageIndex].store(_simpleStorageNumber);
+        simpleStorageArray[_simpleStorageIndex].store(_simpleStorageNumber);//Here we are trying to store a number into the smart contract
     }
     
     function sfGet(uint256 _simpleStorageIndex) public view returns (uint256) {

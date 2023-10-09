@@ -1,0 +1,141 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Group",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "Favname",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Favnum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Favname",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_Favnum",
+						"type": "uint256"
+					}
+				],
+				"name": "addperson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nametoFav",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_Number",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Extrastorage.sol": "Extrastorage"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Extrastorage.sol": {
+			"keccak256": "0x486d3964356450deca8883019f40c7bb30771df1d1a436c48cc6c78221c84c06",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://05bfb2277e3c0aec20ea24b8f48c284966f16fd1887e24cd7a632d76f6e0e6ad",
+				"dweb:/ipfs/QmdMhqbedpnJN7etdvwb8pw2BvGhgAtDpZ3eZrYtdjZX2Y"
+			]
+		},
+		"contracts/practice1.sol": {
+			"keccak256": "0x5fb9398b1592c7f289e7cb093adf85065097849249c3f4fa66b6ec9365b54a51",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://497cace62aa41ddc9ebfce650e2be5052b6824467cc9d65b49d125fa456709bd",
+				"dweb:/ipfs/QmYrZbMqgKg7TVcxfVTA4XTeMJvnfNYHTSzFX68JChfiBj"
+			]
+		}
+	},
+	"version": 1
+}

@@ -14,7 +14,7 @@ contract SimpleStorage {
        Group.push(People(_Favname,_Favnum));
        nametoFav[_Favname]= _Favnum;
     }
-    function store(uint _Number) public{
+    function store(uint _Number) public virtual {
      favnumber=_Number;
     }
     function retrieve() view public  returns(uint256 ){
