@@ -1,0 +1,2 @@
+lecture -6
+Need to go through the documentation of foundry (Reading the cheatcodes part of the documentation)
